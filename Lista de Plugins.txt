@@ -1,0 +1,19 @@
+404page - your smart custom 404 error page
+Acunetix Secure WordPress
+Akismet Anti-Spam
+Alphabetic Pagination
+AntiVirus
+BackUpWordPress
+Better WordPress Minify
+Cloudflare
+Force Email Login
+Contact Form 7
+Hyper Cache
+iThemes Security
+Jetpack por WordPress.com
+Meta Box
+OneSignal Push Notifications
+Simple Image Sizes
+WP Smush
+WP-PostViews
+Yoast SEO

@@ -1,0 +1,35 @@
+/* Fundo da pagina de Login */
+body.login {background: url(images/fundo-login.jpg) center; background-size: cover;}
+
+/* logo */
+.login h1 a { background: url(images/logo-login-site.png) center no-repeat !important; width: 150px !important; height: 175px !important; margin: -50px 0 -20px 75px !important;}
+
+/* Caixa geral do Login */
+.login #loginform { margin-top: 1px !important; background-color: rgba(0, 0, 0, 0.7) !important; border-radius: 3px !important;} 
+.login #lostpasswordform {margin-top: 1px !important; background-color: rgba(0, 0, 0, 0.7) !important;}
+
+/* messages de error de login*/
+.message { margin: 0 !important; background-color: #900; color: #C00;}
+.login #login_error {background-color: #fff; border-color: #c00; color: #c00; margin-top: 5px;}
+
+/* Cadastre-se no site */
+#registerform {height: 190px !important; margin-top: 1px !important; background-color: rgba(0, 0, 0, 0.7) !important; }
+#reg_passmail {margin-top: -5px !important; color: #fff !important;}
+#user_email {font-size: 20px !important;}
+#wp-submit {margin-top: -11px !important;}
+
+/* login form - Caixas */
+.login label {color: #fff !important;}
+.login input {color: #222;}
+.login #user_login {font-size: 20px !important;}
+.login #user_pass {font-size: 20px !important;}
+
+.login .button-primary {border-color: #287DB3; font-weight: bold; color: white; background: #287DB3; text-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0; }
+
+/* Links de Perdeu a Senha e Volta pro Site */
+.login #nav, .login #backtoblog {text-shadow: #ccc 0 1px 0 !important; padding: 5px 8px !important;}
+.login #nav a, .login #backtoblog a {color: #fff !important; text-decoration: none !important;}
+.login #nav a:hover, .login #backtoblog a:hover {color: #ccc !important;}
+
+.login #nav {background-color: rgba(0, 0, 0, 0.7) !important; margin-top: 1px !important; border-radius: 3px 3px 0 0 !important;}
+.login #backtoblog {background-color: rgba(0, 0, 0, 0.7) !important; margin-top: 0 !important; border-radius: 0 0 3px 3px !important;}

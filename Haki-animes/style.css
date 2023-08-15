@@ -1,0 +1,716 @@
+/*
+Theme Name: Haki Animes
+Theme URI: 
+Description: O Universo dos Animes & Mangás.
+Author: Kevin Kley
+Version: 1.0
+Tags: series, animes, downloads, animações, episódios, mangás, doramas, ovas, filmes, live-actions, animes-legendados, animes-dublados, mega
+Text Domain: Haki Animes
+*/
+
+/* -- Estilos Gerais de toda a pagina -- */
+*{ margin: 0; padding: 0; }/* Reset da Pagina 0 , 0 */
+
+/* Fundo da Pagina */
+body {background: url(images/fundo-site.jpg) fixed 0; background-size: cover; font: 14px arial,tahoma,verdana; text-align: center;}
+
+/* ---- Anti Adblock ----------- */
+.desativa-adblock {position: absolute; top: 0; right: 0;}
+.texto-adblock {width: 80%; text-align: center;}
+.volte-site {padding-top: 10px; text-align: center;}
+.volte-site a {width: 10%; font-weight: bold !important; text-decoration: underline !important; color: #e90000 !important;}
+.volte-site a:hover {color: #0010e9 !important;}
+
+/*=== HEADER ===*/
+#header {width: 1042px; height: 389px; margin: 0 auto; border-left: 1px solid #E9EBEE; border-right: 1px solid #E9EBEE; background-color: #E9EBEE;} 
+
+/* --- Header Superior / Topo do site --- */
+#header-superior {width: 1040px; margin: 0 auto;}  
+
+/* -- Tamanho do Topo -- */
+#header-superior-content {width: 1030px; overflow: hidden; margin: 0 auto;}     		    
+
+/*- Header Topo / Area do Topo - */
+#header-topo {width: 1030px; height: 53px; float: left; margin-top: 5px; background-color: #212121; border-top: 3px solid #ff7c00; border-left: 3px solid #ff7c00;border-right: 3px solid #ff7c00;}
+
+/* Bloco Redes Sociais *//* Caixa do Lado */
+#bloco-redes-sociais {width: 100px; position: fixed; top: 40%; left: 22.5px; border-radius: 5px; background-color: #fff;}
+#redes-caixa {margin: -3px 0 6px 0;}
+#twitter {margin-top: 4px;}
+
+/* Volta ao Topo, botão lado esquerdo */
+.volta-topo {position: fixed; bottom: 7%; left: 38px;}
+
+/* Logo - Marca do Site */
+#logo-topo {float: left; width: 180px; height: 50px; margin: -1px 100px 0 1px;}
+#logo-topo a {float: left;}
+#logo-topo img {width: 180px; height: 50px; border: 0;}
+
+/* Menu 2 Topo */
+#nav-content2 {width: 1035px; margin: 0 auto;}
+#nav-content2 ul {float: left; list-style: none; text-align: left;}
+#nav-content2 ul li {float: left; position: relative; font-size: 12px; font-family: tahoma, arial, verdana; font-weight: bold; text-transform: uppercase; border-right: 1px dashed #555; border-left: 1px dashed #555;}
+#nav-content2 ul li a {display: block; padding: 16px 12px; text-decoration: none; color: #fff;}
+#nav-content2 ul li a:hover {color: #fff; background: #444;}
+
+/* SubMenu */
+#nav-content2 ul li:hover ul {display: block;}
+#nav-content2 ul li ul {width: 220px; background-color: #212121; display: none; position: absolute; border-left: 1px solid #ff7c00; border-top: 1px solid #fff;}
+#nav-content2 ul li ul li {border-right: 1px solid #ff7c00; width: 100%; text-transform: uppercase; font-size: 12px; font-family: tahoma, arial, verdana; font-weight: bold;}
+#nav-content2 ul li ul li a {padding: 10px 16px; color: #fff; border-bottom: 1px dashed #ff7c00;}
+#nav-content2 ul li ul li a:hover {color: #fff; background-image: url(images/bg_sub_menu.png);}
+
+/* - Header Social - */
+#header-social {float: right; margin-right: 2px;}
+#header-social a {margin: 4px 3px 0 3px; float: left;}
+#header-social img {width: 41px; height: 41px; transition: all 500ms ease; border: 0;}
+#header-social img:hover {transform: translateX(-5px);}
+
+#semana-do-site {margin: -1px 0 0 50px; float: left; }
+#semana-do-site p {font-size: 18px; font-family: serif; color: #fff; font-weight: bold;}
+
+/* -- Login -- */
+#login {float: right;}
+#login ul {margin: 0; padding: 0; list-style: none;}
+#login ul li {float: left; margin: 4px 3px 0 0;}
+#login ul .logar img {width: 41px; height: 41px;}
+
+/* --- CAPA DO SITE --- */
+#header-content {width: 1040px; margin: 0 auto; overflow: hidden;}
+#capa-slider {height: 283px; float: left; margin-left: 5px; background-color: #ccc; border-top: 1px solid #E9EBEE; border-bottom: 1px solid #E9EBEE; }
+#capa-slider img {border: 0; width: 1030px; height: 281px;}
+
+/* === Nav de Navegação / Categorias === */ 
+#nav {max-width: 1030px; height: 43px; margin-left: 5px; float: left; background-color: #212121; border-left: 3px solid #ff7c00; border-bottom: 3px solid #ff7c00; border-right: 3px solid #ff7c00; border-radius: 0 0 5px 5px;}
+
+/* -- Nav Content -- */
+#nav-content {width: 1035px; margin: 0 auto; margin-left: -5px;}
+#nav-content ul {float: left;	list-style: none; text-align: left;}
+#nav-content ul li {float: left; position: relative; font-size: 12px; font-family: tahoma, arial, verdana; font-weight: bold; text-transform: uppercase; border-right: 1px dashed #555;}
+#nav-content ul li a {display: block; padding: 10px 12px; text-decoration: none; color: #fff;}
+#nav-content ul li a:hover {color: #fff; background: #444;}
+
+/* - SubMenus - */
+#nav-content ul li:hover ul {display: block;}
+#nav-content ul li ul {width: 220px; background-color: #212121; display: none; position: absolute; border-left: 1px solid #ff7c00; border-top: 1px solid #fff;}
+#nav-content ul li ul li {border-right: 1px solid #ff7c00; width: 100%; text-transform: uppercase; font-size: 12px; font-family: tahoma, arial, verdana; font-weight: bold;}
+#nav-content ul li ul li a {padding: 10px 16px; color: #fff; border-bottom: 1px dashed #ff7c00;}
+#nav-content ul li ul li a:hover {color: #fff; background-image: url(images/bg_sub_menu.png);}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {color: #262626; text-decoration: none; background-color: #555 !important;}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {color: #fff !important; text-decoration: none; background-color: #444 !important; outline: 0;}
+
+/* === CONTAINER === *//* === AREA DA PAGINA INDEX === *//* -------------------------------------------------------------------------------------------- */
+#container {width: 1042px; margin: 0 auto; text-align: left; overflow: hidden; background-color: #E9EBEE; border-left: 1px solid #E9EBEE; border-right: 1px solid #E9EBEE; border-bottom: 1px solid #E9EBEE;} /* Aqui é o fundo do conteudo */
+
+/* --- Content --- */
+#content {width: 702px; margin: 0 0 10px 5px; border-radius: 5px 5px 0 0; float: left; overflow: hidden; background: #fff; border: 1px solid #CBCBCB;}
+
+/* -- Publicidade Topo --/-- Home, categorias, singles, e outros -- */
+.publi-topo {width: 690px; overflow: hidden; height: 0 auto; margin: -15px 5px -25px 5px; text-align: center;}
+.anuncie-topo span {width: 100%; height: 50px; font-weight: bold; font-size: 20px; font-family: calibria; padding-top: 10px; float: left; margin: 0 0 -1px 0; border: 1px solid #e6e6e6; border-radius: 5px 5px 0 0;}
+
+/* -- Publicidade Embaixo --/-- single -- */
+.publi-baixo {width: 690px; overflow: hidden; height: 0 auto; margin: 5px; text-align: center;}
+.publi-baixo span {width: 100%; height: 50px; font-weight: bold; font-size: 20px; font-family: calibria; padding-top: 10px; float: left; margin: -5px 0 5px 0; border: 1px solid #e6e6e6; border-radius: 0 0 5px 5px;}
+
+/* -- LANÇAMENTOS -- *//* -- Titulo do lançamentos da Home -- */
+#lancamentos {width: 700px; height: 35px; background-image: url(images/bg_grande_titulo.jpg); margin: 6px 0 10px 0; padding: 1px 0; float: left; background-color: #666; text-align: center;}
+#lancamentos span {text-transform: uppercase; font-size: 22px; font-family: calibria; font-weight: bold; color: #fff;}
+
+/* TITULO HOME CATEGORIAS */
+.title-home-cat {width: 660px; height: 30px; float: left; background-image: url(images/titulos-home.jpg);  margin-left: 15px;}
+.title-home-cat span {font-size: 20px; padding-right: 5px; background-color: #fff; font-family: comic sans ms, calibria, Algerian Regular; font-weight: bold; text-transform: uppercase; color: #000; border-radius: 0 50px 50px 0;}
+
+/* Aviso de quando nao houve conteúdo no post */
+.sem-conteudo {margin: 3px 0 0 5px;}
+.sem-conteudo p {font-size: 15px; color: #c70500;}
+.Obs-extra {width: 355px; float: left; color: #ff0000; font-weight: bold; font-size: 15px; font-family: sans-serif, arial, tahoma;}
+
+/* -- ULTIMOS POSTS -- / -- ULTIMOS POSTS -- / -- ULTIMOS POSTS -- / -- ULTIMOS POSTS -- / -- ULTIMOS POSTS -- / --  */
+#ultimos-posts {float: left; margin: 0 0 35px 15px; border-radius: 5px 5px 0 0; border-top: 1px solid #E8E8E8; border-left: 1px solid #E8E8E8; border-right: 1px solid #E8E8E8; border-bottom: 3px solid #900;}
+.ultimos-post-geral {float: left;}
+.ultimos-post {max-width: 345px; float: left;}
+.ultimos-post img {max-width: 260px; max-height: 364px; width: auto; height: auto; float: left; margin: 20px 0 3px 40px; border: 0; }
+.ultimos-post h1 {width: 275px; float: left; font-size: 20px; font-weight: normal; font-family: calibria, tahoma, verdana, helvetica; color: #217DD3; margin: 0 0 5px 35px;}
+.ultimos-post h1:hover {text-decoration: underline;}
+
+.ultimos-post .status-home {float: left; margin: 0 15px 0 35px; color: #555; font-size: 12px; font-family: sans-serif;}
+.ultimos-post .status-home span {text-transform: lowercase;}
+.ultimos-post .post-autor {width: 155px; float: left; font-size: 12px; font-family: sans-serif, arial, tahoma; color: #555; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.ultimos-post .post-autor span a {color: #333; text-decoration: none;}
+.ultimos-post .post-autor span a:hover {text-decoration: underline; color: #cf0000;}
+.ultimos-post .sipnose {width: 275px; margin: 4px 0 0 35px; text-align: justify; font-size: 15px; font-family: sans-serif, arial, tahoma; color: #444; float: left; padding-top: 1px; overflow: hidden;}
+
+/* - Mini Ultimos Post - */
+.list-ultimos {width: 313px; background-color: #F9F9F9; float: left; border-left: 1px solid #EAEAEA;}
+.list-ultimos ul {margin-top: 20px; float: left;}
+.list-ultimos li {width: 100%; list-style: none; float: left; margin-bottom: 10px; border-bottom: 1px solid #E8E8E8;}
+.list-ultimos h2 {width: 175px; margin: -2px 5px 3px 0; color: #217DD3; font-weight: bold; font-size: 14px; font-family: sans-serif, arial, tahoma; float: left;}
+.list-ultimos h2:hover {color: #217DD3; text-decoration: underline;}
+.list-ultimos img {width: 100px; height: 70px; float: left; margin: 0 10px 10px 20px; border: 0;}
+.list-ultimos .status-home {width: 165px; float: left; font-size: 11px; font-family: sans-serif; color: #555;}
+.list-ultimos .status-home span {text-transform: lowercase;}
+.list-ultimos .post-autor {width: 155px; float: left; font-size: 11px; font-family: sans-serif, arial; color: #555; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.list-ultimos .post-autor span a {color: #333; text-decoration: none;}
+.list-ultimos .post-autor span a:hover {text-decoration: underline; color: #cf0000;}
+
+/* -- NEWS COO --/ -- */
+#news {width: 660px; float: left; margin: 0 0 35px 15px;}
+.news-post {float: left;}
+.post-news {width: 660px; float: left; border: 1px solid #E8E8E8; border-radius: 5px 5px 0 0;}
+.post-news img {max-width: 290px; max-height: 180px; float: left; margin: 20px 10px 20px 20px; border: 0;}
+.post-news h1 {width: 335px; font-size: 20px; font-weight: normal; font-family: calibria, tahoma, verdana, helvetica; color: #217DD3; float: left; margin: 15px 0 5px 0;}
+.post-news h1:hover {text-decoration: underline;}
+.post-news .data-news {float: left; color: #555; font-size: 12px; font-family: sans-serif; margin-right: 15px;}
+.post-news .post-autor {width: 185px; font-size: 12px; font-family: sans-serif; color: #555; float: left; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.post-news .post-autor span a {color: #333; text-decoration: none;}
+.post-news .post-autor span a:hover {text-decoration: underline; color: #cf0000;}
+.post-news .sipnose {width: 335px; max-height: 110px; text-align: justify; font-size: 15px; font-family: sans-serif, arial, tahoma; color: #444; float: left; margin-top: 4px; overflow: hidden;}
+
+/* - Mini News Coo Post - */
+.list-news {width: 660px; float: left; background-color: #f9f9f9; border-top: 1px solid #EAEAEA; border-left: 1px solid #EAEAEA; border-right: 1px solid #EAEAEA; border-bottom: 3px solid #900;}
+.list-news li {width: 50%; list-style: none; float: left; padding: 10px 0; border-bottom: 1px solid #EAEAEA;}
+.list-news img {width: 100px; height: 70px; float: left; margin: 0 10px 0 20px; border: 0;}
+.list-news h2 {width: 190px; color: #217DD3; font-weight: bold; font-size: 14px; font-family: sans-serif, arial, tahoma; float: left; margin-top: 0;}
+.list-news h2:hover {color: #217DD3; text-decoration: underline;}
+.list-news .data-news {float: left; font-size: 11px; font-family: sans-serif, arial, tahoma; color: #555; margin-top: -7px;}
+
+/* -- ANIMES LEGENDADOS --/-- MANGÁS --/-- ANIMES DUBLADOS --/-- FILMES --/-- OVAS -- */
+.posts-animes {width: 660px; float: left; border: 1px solid #E8E8E8; border-radius: 5px 5px 0 0;}
+.posts-animes img {max-width: 260px; max-height: 364px; min-width: 250px; min-height: 354px; float: left; margin: 20px 10px 20px 20px; border: 0;}
+.posts-animes h1 {width: 355px; font-size: 20px; font-weight: normal; font-family: calibria, tahoma, verdana, helvetica; color: #217DD3; float: left; margin: 15px 0 6px 0;}
+.posts-animes h1:hover {text-decoration: underline;}
+.posts-animes .status-home {float: left; color: #555; font-size: 12px; font-family: sans-serif; margin-right: 15px;}
+.posts-animes .status-home span {text-transform: lowercase;}
+.posts-animes .post-autor {width: 195px; font-size: 12px; font-family: sans-serif; color: #555; float: left; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.posts-animes .post-autor span a {color: #333; text-decoration: none;}
+.posts-animes .post-autor span a:hover {text-decoration: underline; color: #cf0000;}
+.posts-animes .sipnose {width: 355px; max-height: 262px; text-align: justify; font-size: 15px; font-family: sans-serif, arial, tahoma; color: #444; float: left; margin-top: 4px; overflow: hidden;}
+
+/* - Mini Animes Legendados e outros Post - */
+.list-cat-animes {width: 660px; float: left; background-color: #f9f9f9; border-top: 1px solid #EAEAEA; border-left: 1px solid #EAEAEA; border-right: 1px solid #EAEAEA; border-bottom: 3px solid #900;}
+.list-cat-animes li {width: 50%; list-style: none; float: left; padding: 10px 0; border-bottom: 1px solid #EAEAEA;}
+.list-cat-animes img {width: 100px; height: 70px; float: left; margin: 0 10px 0 20px; border: 0;}
+.list-cat-animes h2 {width: 190px; max-height: 50px; overflow: hidden; color: #217DD3; font-weight: bold; font-size: 14px; font-family: sans-serif, arial, tahoma; float: left; margin-top: -2px;}
+.list-cat-animes h2:hover {color: #217DD3; text-decoration: underline;}
+.list-cat-animes .status-home {width: 165px; float: left; font-size: 11px; font-family: sans-serif; color: #555; margin-top: -7px;}
+.list-cat-animes .status-home span {text-transform: lowercase;}
+.list-cat-animes .post-autor {width: 165px; float: left; margin-top: 1px; font-family: sans-serif; font-size: 11px; color: #555; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.list-cat-animes .post-autor span a {color: #333; text-decoration: none;}
+.list-cat-animes .post-autor span a:hover {text-decoration: underline; color: #cf0000;}
+
+/* -- LIVE ACTIONS --/-- DORAMAS --/-- LIVE ACTIONS --/-- DORAMAS --/-- LIVE ACTIONS --/-- DORAMAS -- */
+#live-actions {width: 310px; float: left; margin: 0 0 35px 15px;}
+.Obs-extra2 {width: 265px; float: left; text-align: left; color: #ff0000; font-weight: bold; font-size: 15px; font-family: sans-serif, arial, tahoma;}
+
+/* -- Titulo Live Actions e Doramas -- */
+.title-live-act-doramas {width: 310px; height: 30px; background-image: url(images/titulos-home.jpg);}
+.title-live-act-doramas span {font-size: 20px; padding-right: 5px; background-color: #fff; font-family: comic sans ms, calibria, Algerian Regular; font-weight: bold; text-transform: uppercase; color: #000; border-radius: 0 50px 50px 0;}
+
+.live-actions-geral {width: 310px;  float: left; border-radius: 5px 5px 0 0; border-top: 1px solid #E8E8E8; border-left: 1px solid #E8E8E8; border-right: 1px solid #E8E8E8; border-bottom: 3px solid #E8E8E8;}
+.live-act-doramas {width: 270px; text-align: center; margin: 20px;}
+.live-act-doramas img {max-width: 260px; max-height: 364px; min-width: 240px; min-height: 344px; border: 0;}
+.live-act-doramas  h1 {width: 270px; text-align: left; margin: 7px 0 5px 0; font-size: 20px; font-weight: normal; font-family: calibria, tahoma, verdana, helvetica; color: #217DD3;}
+.live-act-doramas  h1:hover {text-decoration: underline;}
+.live-act-doramas .status-home {max-width: 130px; float: left; color: #555; font-size: 12px; font-family: sans-serif; margin-right: 15px;}
+.live-act-doramas .status-home span {text-transform: lowercase;}
+.live-act-doramas .post-autor {width: 130px; float: left; font-size: 12px; font-family: sans-serif; color: #555; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.live-act-doramas .post-autor span a {color: #333; text-decoration: none;}
+.live-act-doramas .post-autor span a:hover {color: #cf0000;}
+.live-act-doramas .sipnose {width: 270px; max-height: 108px; text-align: justify; font-size: 15px; font-family: sans-serif, arial, tahoma; color: #444; float: left; margin-top: 4px; overflow: hidden;}
+
+/* -- Mini Live Actions e Doramas -- */
+.list-live-act-doramas {width: 310px; float: left; background-color: #f9f9f9; border-left: 1px solid #E8E8E8; border-right: 1px solid #E8E8E8; border-bottom: 3px solid #900; } 
+.list-live-act-doramas ul {float: left; margin-top: 10px;} 
+.list-live-act-doramas li {width: 310px; list-style: none; float: left; border-bottom: 1px solid #EAEAEA;}
+.list-live-act-doramas img {width: 100px; height: 70px; float: left; margin: 10px 10px 10px 20px; border: 0;}
+.list-live-act-doramas h2 {width: 165px; float: left; margin: 10px 0 3px 0; color: #217DD3; font-weight: bold; font-size: 14px; font-family: sans-serif, arial, tahoma;}
+.list-live-act-doramas h2:hover {color: #217DD3; text-decoration: underline;}
+.list-live-act-doramas .status-home {width: 165px; float: left; font-size: 11px; font-family: sans-serif; color: #555;}
+.list-live-act-doramas .status-home span {text-transform: lowercase;}
+.list-live-act-doramas .post-autor {width: 165px; float: left; margin-top: 2px; font-family: sans-serif; font-size: 11px; color: #555; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.list-live-act-doramas .post-autor span a {color: #333; text-decoration: none;}
+.list-live-act-doramas .post-autor span a:hover {text-decoration: underline; color: #cf0000;}
+
+/* -- DORAMAS -- */
+#doramas {width: 310px; float: left; margin: 0 0 35px 40px;}
+.doramas-geral {width: 310px; float: left; border-radius: 5px 5px 0 0; border-top: 1px solid #E8E8E8; border-left: 1px solid #E8E8E8; border-right: 1px solid #E8E8E8; border-bottom: 3px solid #E8E8E8;}
+
+/* === SIDEBAR === *//* == AREA DA PAGINA SIDEBAR == *//* ------------------------------------------------------------------------------------------------ */
+#sidebar {width: 327px; float: right; margin-bottom: 10px;}
+
+/* -- Titulos da Sidebar -- */
+#title-sidebar {max-width: 315px; height: 36px; text-align: center; background-image: url(images/bg_sidebar.jpg); background-color: #333; padding: 2px 0; border-radius: 5px 5px 0 0;}
+#title-sidebar span {margin-top: 5px; font-size: 22px; font-family: calibria; font-weight: bold; text-transform: uppercase; color: #fff;}
+
+/* -- Titulos do Fim da Sidebar -- */
+#title-sidebar-fim {width: 315px; height: 15px; float: left; background-image: url(images/bg_sidebar_fim.jpg); background-color: #ccc; border-radius: 0 0 4px 4px;}
+#sidebar-fim-top-novos {width: 315px; height: 15px; float: left; margin-top: 17px; background-image: url(images/bg_sidebar_fim.jpg); background-color: #ccc; border-radius: 0 0 4px 4px;}
+
+.opcao-doe-news {margin-left: 11px;}
+
+/* Editado - Area do tamanho do botao */ 
+.nav > li > a {position: relative; display: block; padding: 7px 15px;}
+
+/* --- Area não clicada dos botoes ---*/
+.nav-tabs > li > a { margin-right: 2px; border-radius: 4px 4px 0 0; text-transform: uppercase; background: #aeadad !important;}
+
+/* --- Active botao clicado --- */
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  color: #fff; cursor: default; background-color: #900 !important; border-bottom-color: transparent; text-transform: uppercase;}
+
+/* --- Sidebar Slider --- */
+.slider-noticia {width: 316px; float: left; background: #fff; margin: 0 0 10px 6px; border-radius: 5px 5px 4px 4px; border-left: 1px solid #CBCBCB; border-right: 1px solid #CBCBCB;}
+.seta-direita {position: relative; top: 71px; text-align: center;}
+.item {width: 314px; height: 177px; background: #ccc;}
+.item img {width: 314px; height: 177px !important;}
+.item h3 {height: 23px; margin-bottom: 2px; padding: 3px 15px; font-size: 16px; font-family: sans-serif; background-color: rgba(0, 0, 0, 0.6); text-overflow: ellipsis; overflow: hidden; white-space: nowrap;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);}
+.item h3 a {text-decoration: none; color: #fff;}
+
+/* --- Sidebar Faça um Doação ----- */
+.doacao-sidebar {margin-bottom: 5px; text-align: center;}
+.doacao-sidebar img {margin-bottom: 5px;}
+
+/* --- Sidebar Vistos --- */
+#sidebar-vistos {width: 316px; float: left; background: #fff; margin: 0 0 10px 6px; border-radius: 5px 5px 4px 4px; border-left: 1px solid #CBCBCB; border-right: 1px solid #CBCBCB;}
+#sidebar-vistos ul {margin: 0; padding: 0; list-style: none; display: block;}
+#sidebar-vistos ul li {width: 146px; float: left;}
+#sidebar-vistos ul li a {color: #555; text-decoration: none;}
+#sidebar-vistos ul li a:hover {color: #ed5353; text-decoration: underline;}
+
+/*Imagem do post views */
+#image-post img {width: 142px; height: 192px; border: 1px solid #777; margin: 10px 0 -6px 13px; float: left;}
+#image-post img:hover {border: 1px solid #581a68}
+
+/*Titulo da imagem do post views */
+.title {width: 142px; height: 22px; background-color: rgba(0, 0, 0,0.6); color: #fff; font-size: 13px; font-family: arial, helvetica, tahoma, verdana; margin: -185px 0 0 13px; float: left; padding: 1.5px 2px 2.5px 2px; text-align: center; overflow: hidden; -webkit-transition: all 0.4s ease; -moz-transition: all 04s ease; -o-transition: all 0.4s ease; -ms-transition: all 0.4s ease; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);}
+.title:hover {height: auto; background-color: rgba(0, 0, 0, 0.7);}
+
+/* Sidebar Recentes */
+#sidebar-recentes {width: 316px; float: left; margin: 0 0 10px 6px; background: #fff; border-radius: 5px 5px 4px 4px; border-left: 1px solid #CBCBCB; border-right: 1px solid #CBCBCB;}
+#sidebar-recentes ul {margin: 0; padding: 0; list-style: none; float: right;} 											
+#sidebar-recentes li {width: 140px; height: 22px; color: #fff; padding: 1.5px 2px 2.5px 2px; background-color: rgba(0, 0, 0, 0.6); font-size: 13px; font-family: arial, helvetica, tahoma, verdana; position: relative; top: -190px; left: 0; float: right; text-align: center; overflow: hidden; -webkit-transition: all 0.4s ease; -moz-transition: all 04s ease; -o-transition: all 0.4s ease; -ms-transition: all 0.4s ease; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);}
+#sidebar-recentes ul li a {color: #fff; text-decoration: none;}
+#sidebar-recentes ul li:hover {height: auto; background-color: rgba(0, 0, 0, 0.7);}
+
+/* Imagem na Recentes */
+.post_recente {width: 140px; height: 191px; overflow: hidden; margin: 10px -11px -7px 15px; float: left;}
+.post_recente img {width: 140px; height: 190px; border: 1px solid #777;}
+.post_recente img:hover {border: 1px solid #581a68;}
+ 
+/* === Sidebar PUBLICIDADE === */
+#sidebar-publi {width: 316px; float: left; margin: 0 0 10px 6px; background: #fff; border-radius: 5px 5px 4px 4px; border-left: 1px solid #CBCBCB; border-right: 1px solid #CBCBCB;}
+
+/* Publicidade Sidebar */
+.thebox {width: 0 auto; height: 0 auto; float: left; margin: -33px 7px -18px 7px;}
+.thebox {text-align: center;}
+.thebox span {width: 314px; height: 60px; font-weight: bold; font-size: 18px; font-family: calibria; padding: 10px 0; float: left; margin: -8px 0 0 -8px;}
+
+/* === Sidebar VISITANTES E CONTADORES === */
+#contador-visitas {width: 316px; float: left; margin: 0 0 10px 6px; background-color: #fff; border-radius: 5px 5px 4px 4px; border-left: 1px solid #CBCBCB; border-right: 1px solid #CBCBCB;}
+
+/* Texto dos Contadores de Visita, Onlines e Monitoramento */
+#contador-visitas .cont-box {margin: 5px 0 -5px 0; text-align: center;}
+#contador-visitas .cont-box p {font-weight: bold; color: #555; font-size: 15px; font-family: arial, sans-serif;}
+
+.cont-visitas {margin: -11px 0 5px 0;} /* Contador de Visitas */
+#contador-online {margin: -10px 0 3px 0; text-align: center;} /* Contador de Online */
+.site-monitorado {margin: -10px 0 10px 0; text-align: center;} /* Site Monitorado por */
+
+/* === PAGINA === *//* AREA PAGE.PHP *//* ------------------------------------------------------------------------------------------------------------------- */
+.main-page {width: 660px; float: left; margin: 5px 0 10px 20px;}
+
+/* --  Title Page -- */
+.main-page  #title-page {width: 700px; height: 35px; background-image: url(images/bg_grande_titulo.jpg); float: left; background-color: #777; text-align: center; margin: 1px 0 10px -20px; padding: 2px;}
+.main-page  #title-page span {text-transform: uppercase; font-size: 22px; font-family: calibria; font-weight: bold; color: #fff;}
+.informacoes-page p {margin: 15px 0; font-size: 17px; font-family: sans-serif; color: #444; text-align: left;}
+.informacoes-page p a {color: #f20707; text-decoration: underline;}                   
+.informacoes-page p a:hover {text-decoration: underline;}                     
+.informacoes-page strong {font-weight: bold; color: #333;}                    
+.informacoes-page em {margin: 5px 0;}
+.informacoes-page ul li {width: 100%; background: #f1f1f1; list-style: none; font-size: 15px; font-family: sans-serif; font-weight: bold; color: #111; margin-bottom: 3px; padding: 1px 5px;}	 
+.informacoes-page ul li a {color: #333; text-decoration: none;}	 
+.informacoes-page ul li a:hover {color: #fff;}	 
+.informacoes-page li:hover {background: #48AEE0;}	 
+.informacoes-page ol li {font-size: 14px; font-family: sans-serif; color: #333; margin: 5px 0; list-style: none;}     
+.informacoes-page h1 {font: 30px calibria; margin: 10px 0; color: #f20707; font-weight: bold; text-decoration: underline;} 
+.informacoes-page h2 {width: 150px; margin: 15px 0 1px 0; font: 20px arial; padding: 2px 5px 2px 5px; color: #fff; background-color: #00AE83; border-radius: 5px 5px 0 0;}
+.informacoes-page h3 {font: 18px arial; color: #e00101;}
+.informacoes-page h4 {font: 16px arial; color: #ed5353;}
+.informacoes-page h5 {font: 14px arial; color: #ed5353;}
+.informacoes-page h6 {font: 12px arial; color: #ed5353;}
+.informacoes-page blockquote {padding: 1px 5px 12px 10px; border: 1px solid #ccc; border-left: 5px solid #ff8400; border-right: 5px solid #ff8400; margin: 10px 0;}
+.informacoes-page blockquote p {font-size: 14px; font-family: arial; color: #191662;}
+.informacoes-page img {max-width: 650px; margin: 5px 10px 5px 0;}
+.informacoes-page span {font: auto; }
+.informacoes-page del {display: none;}
+.alignleft {float: left;} 
+.alignright {float: right;} 
+
+/* Calendario do Site *//* Enviar pro servidor */
+.calendario-semana {width: 660px; float: left; margin-left: 2.5px;}
+.calendario-semana p {width: 655px; text-align: center; margin-top: 25px; float: left; background-color: #e94801; font-family: arial, sans-serif; font-size: 15px; font-weight: bold; color: #fff; border-radius: 3px;}
+
+.calendario-semana ul {margin: 0; padding: 0; list-style: none;} 											
+.calendario-semana li {width: 127px; height: 22px; color: #fff; padding: 1.5px 2.5px 2.5px 2.5px; background-color: rgba(0, 0, 0, 0.6); font-size: 13px; font-family: arial, helvetica, tahoma, verdana; position: relative; top: -177px; left: 0; float: right; text-align: center; overflow: hidden; -webkit-transition: all 0.4s ease; -moz-transition: all 04s ease; -o-transition: all 0.4s ease; -ms-transition: all 0.4s ease; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);}
+.calendario-semana ul li a {color: #fff; text-decoration: none;}
+.calendario-semana ul li:hover {height: auto; background-color: rgba(0, 0, 0, 0.7);}
+
+/* Imagem Calendário */
+.image-calendario {width: 127px; height: 177px; overflow: hidden; margin: 0 5px 5px 0; float: left;}
+.image-calendario img {width: 127px; height: 177px; border: 1px solid #777;}
+.image-calendario img:hover {border: 1px solid #581a68;}
+ 
+/* === PAGINA CONTATO === *//* PAGE-CONTATO.PHP *//* --------------------------------------------------------------------------*/
+.main-page-contato {margin-bottom: 15px;}
+.main-page-contato  #title-page-contato {width: 700px; height: 150px; background-image: url(images/capa-contato.jpg); margin-bottom: 20px}
+.main-page-contato p {margin: 15px 15px 2px 15px; font: 15px arial; font-weight: bold; color: #222;}
+.main-page-contato strong {font-weight: bold; color: #444;}                    
+.main-page-contato h4 {margin-left: 15px; font: 15px arial; color: #444;}
+
+/* === FORMULARIO DE CONTATO === *//* ---------------------------------------------------------------------------------------------------------------------- */
+.main-page-contato form input[type=text],[type=email]{background-color: #eee; border: 1px solid #cccccc; padding: 8px; width: 500px; margin-top: 3px; border-radius: 2px;}
+.main-page-contato form input[type=text]:focus {border: 1px solid #069;}
+.main-page-contato form input[type=email]:focus {border: 1px solid #069;}
+.main-page-contato form textarea {background: #eee; border: 1px solid #cccccc; padding: 8px; width: 500px; max-width: 670px; margin-top: 3px; border-radius: 2px;} /* area do texto */
+.main-page-contato form textarea:focus {border: 1px solid #069;}
+.main-page-contato form input[type=submit] {background-color: #eee; color: #000; padding: 6px; border: 1px solid #cccccc; border-radius: 3px; cursor: pointer;} /* area do Botão */
+.main-page-contato form input[type=submit]:hover {background-color: #ccc; font-weight: bold; border: 1px solid #cccccc;}
+.main-page-contato #opcoes {padding: 3px; background-color: #eee; border: 1px solid #cccccc; border-radius: 3px;}
+
+/* MIGALHAS DE PÃO DA SINGLE *//* BREADCRUMBS */
+#breadcrumbs {width: 657px; height: 22px; margin: -5px 15px; font-family: sans-serif, arial, tahoma; color: #fff; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; list-style: none;}
+#breadcrumbs li {font-size: 14px; color: #fff; font-weight: normal; display: inline-block; vertical-align: middle; margin-right: 10px;}
+#breadcrumbs .separator {font-size: 15px; color: #fff;}
+.item-home a {font-size: 12px; color: #fff; text-decoration: none;}
+.item-cat a:visited {text-decoration: underline; color: #fff;}
+.item-home a:hover {text-decoration: underline; color: #fff;}
+.item-cat a:active {text-decoration: underline; color: #fff;}
+.item-cat a {font-size: 12px; color: #fff; text-decoration: none;}
+.item-cat a:visited {text-decoration: underline; color: #fff;}
+.item-cat a:hover {text-decoration: underline; color: #fff;}
+.item-cat a:active {text-decoration: underline; color: #fff;}
+
+/* === POSTAGENS === *//* AREA SINGLE.PHP *//* ------------------------------------------------------------------------------------------------------------------- */
+#title-single {width: 690px; height: 35px; margin: 6px 0 10px 0; padding: 10px 0; background-image: url(images/bg_titulos_single.jpg); overflow: hidden; border-radius: 0 10px 10px 0; background-color: #222;}
+
+.main-single {margin: 5px 0 0 5px;}
+#imagem-thumbnail {float: left;}
+#imagem-thumbnail img {width: 254px; float: left; display: inline; margin-right: 6px; height: 354px; border: 2px solid #af0000; border-radius: 3px;}
+#imagem-thumbnail img:hover {border: 2px solid #444; border-radius: 3px;}
+
+/* Autor, views e coment */
+.main-single .caixa-meta-inf .caixa-info .post-info {width: 100%; float: left; margin-bottom: 2px;}
+.main-single .caixa-meta-inf .caixa-info .post-info ul {margin: 0; padding: 0; list-style: none;}
+.main-single .caixa-meta-inf .caixa-info .post-info ul span {font-size: 15px; font-family: sans-serif, arial, tahoma; font-weight: bold; color: #fff; margin-top: -1px; float: left; padding-right: 5px; border: 0;}
+.main-single .caixa-meta-inf .caixa-info .post-info .post-autor {width: 200px; float: left; margin: 0 5px; font-size: 14px; font-family: sans-serif, arial, tahoma; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.main-single .caixa-meta-inf .caixa-info .post-info .post-autor a {color: #fff; float: left; text-transform: capitalize; text-decoration: none;}
+.main-single .caixa-meta-inf .caixa-info .post-info .post-autor a:hover {color: #fff; font-weight: normal; background: none; text-decoration: underline;}
+.main-single .caixa-meta-inf .caixa-info .post-info .post-views {width: 110px; float: left; margin-right: 3px; font-size: 14px; color: #fff; font-family: sans-serif, arial, tahoma;}
+.main-single .caixa-meta-inf .caixa-info .post-info .post-coment {float: left; font-size: 14px; color: #fff;}
+
+/* Caixa Informaçoes do Post */
+.main-single .caixa-meta-inf {width: 426px; float: left;}
+.main-single .caixa-meta-inf .caixa-info {background-color: #4C4C4A; padding: 4px 0; float: left;}
+.main-single .caixa-meta-inf h4 {color: #fff; font-size: 15px; font-weight: bold; font-family: sans-serif, arial, tahoma; float: left; margin: 0;} 
+.main-single .caixa-meta-inf h2 {color: #fff; width: 210px; margin: 0; font-size: 15px; font-weight: bold; font-family: sans-serif, arial, tahoma; float: left; }
+.main-single .caixa-meta-inf span {font-weight: normal; font-size: 14px; text-transform: capitalize;}
+.main-single .caixa-meta-inf .episo-status, .estu-ano, .audio-fans, .forma-tama {margin-bottom: 3px; float: left;}
+.main-single .caixa-meta-inf .episo-status h4 {width: 200px; margin: 0 5px;}
+.main-single .caixa-meta-inf .estu-ano h4 {width: 200px; height: 16px; overflow: hidden; margin: 0 5px;}
+.main-single .caixa-meta-inf .audio-fans h4 {width: 200px; margin: 0 5px;}
+.main-single .caixa-meta-inf .genero h4 {width: 415px; margin-left: 5px;}
+.main-single .caixa-meta-inf .sipnose h4 {font-size: 16px; color: #000; margin: 2px 5px 0 0;}
+.main-single .caixa-meta-inf .sipnose {width: 426px; float: left; color: #111; margin-top: 2px; padding: 5px; font-size: 15px; text-align: justify; font-family: sans-serif, arial, tahoma; background-color: #F0F0E1;}
+.main-single .caixa-meta-inf .filme {width: 426px; float: left; color: #eb0000; font-weight: bold; padding: 2px 5px; font-size: 15px; font-family: sans-serif, arial, tahoma; background-color: #F0F0E1;}
+
+#votos {width: 180px; margin: -31px 20px 0 0; padding: 3px 0 3px 20px; float: right; border-radius: 5px 5px 0 0; border-top: 1px solid #ccc; border-left: 1px solid #ccc; border-right: 1px solid #ccc; background: #eee;}
+
+/* -- Episódio, Blu-Ray, Tamanho, Formato -- */
+.class-episodio {width: 690px; float: left; text-align: center; margin-top: 45px;}
+.class-episodio h1 {width: 690px; height: 35px; margin-left: -5px; font-size: 28px; background-image: url(images/bg_titulos_single.jpg); font-family: calibria; font-weight: bold; color: #fff; border-radius: 0 10px 10px 0;}  
+.class-episodio .forma-tama {width: 640px; margin: 5px 0 0 25px; float: left;}
+.class-episodio .forma-tama h3 {width: 200px; height: 21px; background-image: url(images/bg_Blu_Ta_Ma.jpg); font-weight: bold; float: left; font-size: 15px; font-family: sans-serif, arial, tahoma; color: #fff; margin: 0; padding-top: 2px;}
+.class-episodio .forma-tama h2 {width: 200px; height: 21px; background-image: url(images/bg_Blu_Ta_Ma.jpg); font-weight: bold; float: left; font-size: 15px; font-family: sans-serif, arial, tahoma; color: #fff; margin: 0 10px; padding-top: 2px;}
+.class-episodio .forma-tama span {font-size: 14px; font-weight: normal; text-transform: uppercase;}
+
+.class-episodio .servidor h2 {width: 640px; height: 21px; background-image: url(images/bg_Servidor.jpg); font-weight: bold; float: left; font-size: 15px; font-family: sans-serif, arial, tahoma; color: #fff; margin-left: 25px; padding-top: 2px;}
+.class-episodio .servidor span {font-size: 14px; font-weight: normal; text-transform: capitalize;}
+.links_quebrado {padding: 2px 7px; float: left; color: #222; margin: -1px 0 0 33px; background-color: #eee; border-left: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb; border-right: 1px solid #dbdbdb; border-radius: 0 0 5px 5px;}
+.limite_mega {padding: 2px 7px; float: right; color: #222; margin: -1px 34px 0 0; background-color: #eee; border-left: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb; border-right: 1px solid #dbdbdb; border-radius: 0 0 5px 5px;}
+.limite_mega:hover {border-bottom: 2px solid #e22b00;}
+
+/* Conteudo do post do site */
+.Episodios_link {margin: -10px 0 0 28px; width: 633px; padding: 40px 0 20px 0; background-color: #EEEEEE; float: left; border-left: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb; border-right: 1px solid #dbdbdb;}
+.main-single strong {font-weight: bold; color: #000;}
+.main-single p {width: 585px; float: left; margin: 0 0 20px 27.5px; font-size: 15px; font-family: sans-serif, arial, tahoma; font-weight: bold; color: #222; text-align: left; list-style: none;}
+.main-single p a {color: #fff; padding: 10px 15px; border-radius: 3px; text-decoration: none; background: -moz-linear-gradient(center bottom, #d90007 27%,#ed2d2d 100%); background: -webkit-gradient(linear, left bottom, left top, color-stop(0.27, #616161),color-stop(1, #616161)); background-color: #666;}
+.main-single p a:hover {color: #fff; font-weight: bold; background: -moz-linear-gradient(center bottom, #bb0107 30%,#e60007 100%); background: -webkit-gradient(linear, left bottom, left top, color-stop(0.3, #bb0107),color-stop(1, #e60007)); background-color: #ccc;}
+.main-single p a:active {background: -webkit-gradient(linear, left bottom, left top, color-stop(0.3, #bb0107),color-stop(1, #e60007)); background-color: #ccc;}
+.main-single em {font: 15px arial;}
+.alignleft {float: left; margin-right: 10px;}
+.alignright {float: right; margin-left: 10px;}
+
+.main-single img {border-radius: 3px; border: 1px solid #ccc;}
+.main-single p span {margin-left: -28px; color: #fff; text-align: left; background-color: #be0000; float: left; padding: 2px 10px 0 10px; border-radius: 0 5px 5px 0; text-decoration: none !important; -moz-box-shadow: 4px 4px 0px #000000; -webkit-box-shadow: 4px 4px 0px #000000; box-shadow: 4px 4px 0px #000000;}
+.main-single del {padding: 10px 12px; background-color: #777;  color: #fff; text-decoration: none; margin-right: 5px; border-radius: 5px;}
+
+/* Css do plugin Jetpack */
+.sharedaddy h3.sd-title:before {border: 0 !important;}
+.robots-nocontent.sd-block.sd-social.sd-social-icon.sd-sharing {border-top: 1px solid #ddd !important; float: left !important; margin-top: 10px !important; width: 100% !important;}
+.sd-content ul {margin-left: 5px !important;}
+div.sharedaddy h3.sd-title {margin-left: 5px !important;}
+
+/* Inutilizados */
+.main-single blockquote {display: none;} .main-single ul li {display: none;} .main-single ol li {display: none;} 
+
+/* Mangá Conteúdo */
+.volumes_link {margin: -10px 0 0 28px; width: 633px; max-height: 5935px; padding: 40px 0 20px 0; background-color: #EEEEEE; float: left; border-left: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb; border-right: 1px solid #dbdbdb; overflow: auto; }
+.main-single .volumes_link strong {font-weight: bold; width: 350px; color: #000; font-size: 16px; float:left; margin: -267px 0 0 210px}
+.main-single .volumes_link p {width: 585px; float: left; margin: 0 -69px 0 25px; font-size: 14px; font-family: sans-serif, arial, tahoma; font-weight: normal ; color: #222; text-align: left; list-style: none; background: #fff;}
+.main-single .volumes_link p a {color: #fff; float: left; margin: -25px 0 0 210px; padding: 2px 145px; border-radius: 3px; text-decoration: none; font-size: 14px; font-weight: bold; background: -moz-linear-gradient(center bottom, #bb0107 30%,#e60007 100%); background: -webkit-gradient(linear, left bottom, left top, color-stop(0.3, #bb0107),color-stop(1, #e60007));}
+.main-single .volumes_link p a:hover {color: #fff; font-weight: bold; background: -moz-linear-gradient(center bottom, #bb0107 30%,#e60007 100%); background: -webkit-gradient(linear, left bottom, left top, color-stop(0.3, #bb0107),color-stop(1, #e60007)); background-color: #ccc;}
+.main-single .volumes_link p a:active {background: -webkit-gradient(linear, left bottom, left top, color-stop(0.3, #bb0107),color-stop(1, #e60007)); background-color: #ccc;}
+.main-single .volumes_link em {font: 15px arial;}
+.alignleft {float: left; margin-right: 10px;}
+.alignright {float: right; margin-left: 10px;}
+.main-single .volumes_link img {border-radius: 3px; border: 1px solid #ccc;}
+.main-single .volumes_link p span {margin-left: -28px; color: #fff; text-align: left; background-color: #be0000; float: left; padding: 2px 10px 0 10px; border-radius: 0 5px 5px 0; text-decoration: none !important; -moz-box-shadow: 4px 4px 0px #000000; -webkit-box-shadow: 4px 4px 0px #000000; box-shadow: 4px 4px 0px #000000;}
+.main-single .volumes_link del {padding: 10px 12px; background-color: #777;  color: #fff; text-decoration: none; margin-right: 5px; border-radius: 5px;}
+.main-single .volumes_link hr {background: #eee; display: block; padding: 2px 200px;}
+.main-single .volumes_link img {border-radius: 3px; width: 200px; height: 270px;}
+.main-single ol li {display: inline !important; width: 360px; float: left; margin: -242px 0 0 235px; font-size: 13px; color: #000; text-decoration: none;} 
+
+/* Inutilizados */
+.main-single .volumes_link blockquote {display: none;} .main-single ul li {display: none;} .main-single ol li {display: none;} 
+
+/* Posts Relacionados */
+.relacionados {width: 680px; max-height: 255px; overflow: auto; float: left; margin: 0 15px 5px 15px;}
+.text-Relac h3 {width: 656px; float: left; margin: 45px 0 0 22px; padding: 5px; background-color: #be0000; text-align: center; font-size: 15px; font-family: sans-serif, arial, tahoma; font-weight: bold; color: #fff; border-radius: 5px;}
+.box-relacionado {float: left; margin: 0 3px 5px 12px; background-color: #be0000; border-radius: 4px; border: 0;}
+.box-relacionado img {width: 150px; height: 200px; border: 0;}
+.box-relacionado li {width: 150px; height: 20px; padding: 2px 4px; color: #fff; font-size: 13px; font-family: sans-serif, arial, tahoma; text-align: center;  list-style: none; border-radius: 4px; border: 0; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.box-relacionado li:hover {background-color: #a30000;}
+.box-relacionado li a {color: #fff; text-decoration: none;}
+
+/* ------------------- CATEGORIA ----------------------------------------------------------------------------------------------------------------------- */
+/* Paginação por Letra */
+#primary {width: 700px; overflow: hidden; background-color: #fff; border-top: 1px solid #e2e2e2; border-bottom: 1px solid #e2e2e2;}
+.ap_english {width: 650px !important; padding: 0 !important; margin-left: 25px;}
+ul.ap_pagination li {transition: all 500ms ease; border-radius: 3px !important; overflow: hidden; background-color: #555 !important; width: 22px !important; height: 25px !important; margin-right: 2px; border: none !important;}
+ul.ap_pagination li:hover {transform: translateY(3px); background-color: #e40101 !important;}
+
+/* cor da letra */
+ul.ap_pagination li a,
+ul.ap_pagination li a:active,
+ul.ap_pagination li a:visited {color: #fff !important;}
+
+/* Hover da cor da letra */
+ul.ap_pagination li .selected {width: 22px; height: 25px; padding-top: 2px; float: left; margin: -2px 0 0 -2px ; background-color: #e40101; text-decoration: none !important; font-weight: bold;}
+
+/* -- Paginação Normal -- */
+.paginacao {width: 700px; margin: 5px 0; padding: 5px 0; text-align: center; float: left;}
+.paginacao span, .paginacao a {clear: both; font-size: 15px; font-family: sans-serif, arial; border-radius: 3px; background-color: #555; padding: 4px 7px 4px 7px; margin: 1px 1px 0 1px; text-transform: capitalize; text-decoration: none; color: #fff;}
+.paginacao a:visited {color: #fff; text-decoration: none;}
+.paginacao a:hover {color: #fff; text-decoration: none; background-color: #E40101;}
+.paginacao a:active {color: #fff; text-decoration: none;}
+.paginacao span {font-size: 15px; font-family: sans-serif, arial;}
+.paginacao .current,.paginacao .current a {color: #fff; background-color: #e40101; padding: 4px 7px 4px 7px; margin: 10px 1px 0 1px; font-size: 15px; font-weight: bold; font-family: arial, verdana;}
+.paginacao .pontos {font-size: 14px; font-weight: bold; background-color: #333;}
+#Paginacao {background-color: #fff; float: left; border-top: 1px solid #e2e2e2; border-bottom: 1px solid #e2e2e2;}
+
+/* migalhas Ocultas, mas funcionado nos titulos -> Categorias, paginas e posts */
+#migalhas {width: 100%; height: 3px; float: left; opacity: 0;}
+
+/* === CATEGORIAS === *//* CATEGORY.PHP *//* ---------------------------------------------------------------------------------------------------------------- */ 
+.main-category {background: #FFF799; float: left;}
+
+/* --  Title Category -- Aqui editar a parte dos post que fica na categoria */
+#title-category {width: 700px; height: 35px; background-image: url(images/bg_grande_titulo.jpg); float: left; background-color: #777; text-align: center; margin: 6px 0 15px 0; padding: 1px 0 2px 0;}
+#title-category span {text-transform: uppercase; font-size: 22px; font-family: calibria; font-weight: bold; color: #fff;}
+
+.main-category ul li {width: 700px; height: 0 auto; float: left; list-style: none; margin-top: 10px; padding-bottom: 10px; border-bottom: 5px solid #fff;}
+.main-category ul li img {width: 140px; height: 193px; margin: 5px 0 5px 15px; float: left; border: 1px solid #555;}
+.main-category ul li img:hover {border: 1px solid #581a68;}
+
+#titulo-categoria h1 {width: 522px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; height: 33px; margin: 5px 0 5px 5px; border: 1px solid #ccc; padding: 7px 0 4px 4px; float: left; font-size: 18px; background-color: #fff; border-radius: 3px; font-family: sans-serif, arial, tahoma; font-weight: bold;}
+#titulo-categoria a h1 {text-decoration: none; color: #222; margin-left: 5px;}
+#titulo-categoria a h1:hover {color: #d90000; font-weight: bold;}
+
+/* Autor, views e coment */
+.main-category .post-info {width: 100%; margin: 5px 0 4px 0; float: left;}
+.main-category .post-info ul {margin: 0; padding: 0; list-style: none;}
+.main-category .post-info ul span {font-family: sans-serif, arial, tahoma; font-weight: bold; color: #fff; float: left; padding-right: 5px; border: 0;}
+.main-category .post-info .post-autor {width: 255px; float: left; margin-right: 3px; font-size: 14px; font-family: sans-serif, arial, tahoma; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.main-category .post-info .post-autor a {color: #fff; text-transform: capitalize; text-decoration: none;}
+.main-category .post-info .post-autor a:hover {text-decoration: underline;}
+.main-category .post-info .post-views {width: 130px; float: left; margin-right: 3px; font-size: 14px; color: #fff; font-family: sans-serif, arial, tahoma;}
+.main-category .post-info .post-coment {float: left; font-size: 14px; color: #fff;}
+
+/* Caixa Informaçoes do Post */ /* Ser desistir de mexe depois,  só coloca height 160 e o font-size de volta pro 15px; */
+.informacoes-anime {width: 522px; height: 155px; background-color: #257da1; float: left; margin-left: 5px;}
+.informacoes-anime .detalhes-anime {width: 516px; margin: 0 5px; float: left;}
+.informacoes-anime .detalhes-anime h4 {width: 50%; float: left; padding-bottom: 4px; color: #fff; font-size: 14px; font-weight: bold; font-family: sans-serif, arial, tahoma; margin: 0;} 
+.informacoes-anime .detalhes-anime h3 {width: 100%; float: left; padding-bottom: 4px; color: #fff; font-size: 14px; font-weight: bold; font-family: sans-serif, arial, tahoma; margin: 0;} 
+.informacoes-anime .detalhes-anime span {font-weight: normal; font-size: 14px; text-transform: capitalize;}
+
+/* Editar Post */
+#editar-post {width: 80px; float: right; margin: -20px 8px 0 0;}
+#editar-post span a {font-size: 14px; font-family: sans-serif; padding: 5px; border-radius: 3px; background-color: #41afe2; color: #fff; text-decoration: none;}
+#editar-post span a:hover {color: #fff; background-color: #74c3e8;}
+
+/* CATEGORIA NEWS e SINGLE NEWS *//* NEWS COO *//* CATEGORY-NEWS-COO.PHP *//* SINGLE-NEWS-COO.PHP *//* ---------------------------------------------------*/
+#title-category-noticias {margin: 10px 0 5px 0;}
+#title-category-noticias img {width: 700px; height: 188px;}
+
+.main-category-noticias ul li {list-style: none; float: left; margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px dashed #dbdbdb;}
+
+/* Autor Foto */
+#caixa-informacoes {width: 150px; height: 150px; float: left;}
+.moldura-dois {position: relative; float: left;}
+.author {width: 100px; margin: 10px 0 0 10px; float: left;}
+.author img {width: 132px; height: 132px; border: 2px solid #ccc; border-radius: 2px;}
+
+/* Titulo Da Noticia */
+#titulo-categoria-noticias  h1 {width: 512px; height: 0 auto; float: left; margin: 10px 10px 5px 0; border-radius: 4px; border: 1px solid #ccc; padding: 5px; font-size: 25px; font-family: arial, helvetica, tahoma, verdana; font-weight: bold;}
+#titulo-categoria-noticias a h1 {text-decoration: none; color: #111;}
+#titulo-categoria-noticias a h1:hover {color: #F20707; text-decoration: underline;}
+
+/* informações autor, coment e data */
+#views-categoria-news .post-info {width: 512px; float: left; margin-bottom: 5px; background-image: url(images/bg-info-news.jpg); padding: 4px; border-radius: 4px;}
+#views-categoria-news .post-info ul {margin: 0; padding: 0; list-style: none;}
+#views-categoria-news .post-info ul span {font-size: 12px; font-family: sans-serif, arial, tahoma; color: #fff; float: left; padding-right: 5px; border: 0;}
+#views-categoria-news .post-info .data-news {float: left; margin-right: 10px;margin-top: -1px;  color: #fff; font-size: 12px; font-family: sans-serif, arial, tahoma;}
+#views-categoria-news .post-info .post-autor {width: 255px; float: left; padding: 0 5px; margin-top: -1px; border-left: 1px solid #888; font-size: 12px; font-family: sans-serif, arial, tahoma;}
+#views-categoria-news .post-info .post-autor a {color: #ffae01; text-transform: capitalize; text-decoration: none;}
+#views-categoria-news .post-info .post-autor a:hover {text-decoration: underline;}
+#views-categoria-news .post-info .post-coment {float: left;margin-top: -1px;  font-size: 12px; color: #fff; padding-left: 5px; border-left: 1px solid #888;}
+
+/* Redes Socias das Noticias */
+#social-news {width: 502px; float: left;} .face-news {float: left; margin-right: 10px;} .enviar-news {float: left; margin: 0 -3px 0 -5px;}
+#twitter-news {float: left; margin: 0 2px 35px 8px;}
+#twitter-news span a {font-size: 12px; font-family: sans-serif; padding: 3px 3px; border-radius: 3px; font-weight: bold; background-color: #48AEE0; color: #fff; text-decoration: none;}
+#twitter-news span a:hover {color: #fff; background-color: #4897e0;}
+
+/* Editar Post */
+#editar-news-coo {width: 100%; float: left; margin: -4px 0 5px 10px;}
+#editar-news-coo span a {font-size: 14px; font-family: sans-serif; font-weight: bold; padding: 4px 7px; border-radius: 3px; background-color: #48AEE0; color: #fff; text-decoration: none;}
+#editar-news-coo span a:hover {color: #fff; background-color: #4897e0;}
+
+/* -- Imagem Thumbnail da postagem -- */
+.thumb-news {width: 660px; margin-left: 20px; text-align: center; float: left;}
+.thumb-news img {max-width: 650px; margin: 5px 0; padding: 4px; border: 1px solid #e5e5e5; border-radius: 2px;}
+.thumb-news img:hover {border: 1px solid #cfcfcf;}
+
+/* Conteudo de texto */
+.informacoes-categoria-noticias {width: 660px; float: left; margin: 0 20px;}
+.informacoes-categoria-noticias p {margin: 5px 0; font-size: 15px; font-family: sans-serif; color: #222;}
+.informacoes-categoria-noticias p a {color: #f20707; text-decoration: underline;}                   
+.informacoes-categoria-noticias p a:hover {text-decoration: underline;}                     
+.informacoes-categoria-noticias strong {font-weight: bold; color: #000;}                    
+.informacoes-categoria-noticias em {margin: 5px 0;}                           
+.informacoes-categoria-noticias ul li {font-size: 15px; font-family: sans-serif, arial, tahoma; color: #111; margin: 3px 0;}	 
+.informacoes-categoria-noticias ol li {font-size: 15px; font-family: sans-serif, arial, tahoma; color: #111; margin: 3px 0; list-style: none;}     
+.informacoes-categoria-noticias span {font: auto;}
+.informacoes-categoria-noticias h1,h2,h3,h4,h5,h6 {margin-top: 10px;}
+.informacoes-categoria-noticias h1 {font: 22px arial; color: #ed5353;} 
+.informacoes-categoria-noticias h2 {font: 20px arial; color: #ed5353;}
+.informacoes-categoria-noticias h3 {font: 18px arial; color: #ed5353;}
+.informacoes-categoria-noticias h4 {font: 16px arial; color: #ed5353;}
+.informacoes-categoria-noticias h5 {font: 14px arial; color: #ed5353;}
+.informacoes-categoria-noticias h6 {font: 12px arial; color: #ed5353;}
+.informacoes-categoria-noticias del {color: #666;}
+.informacoes-categoria-noticias blockquote {padding: 10px; border-left: 2px solid #ed5353; background: #eee; margin: 10px 0;}
+.informacoes-categoria-noticias img {max-width: 650px; margin: 5px 0; padding: 4px; border: 1px solid #e5e5e5; border-radius: 2px;}
+.informacoes-categoria-noticias img:hover {border: 1px solid #cfcfcf;}
+.informacoes-categoria-noticias a.read-more {display: block;  margin-top: 5px;}
+.informacoes-categoria-noticias a.read-more:hover {font-weight: bold;}
+.alignleft {float: left;} /* Usa as imagens no tamanho 4 images width 165px e 3 images width 220 */
+.alignright {float: right;} 
+
+/* Posts Relacionados da news cool */
+.relacionados-news {width: 680px; float: left; margin: 40px 10px 20px 15px;}
+.relacionados-news h3 {width: 656px; margin: 0 0 5px 7px; padding: 5px; background-color: #c31d1d; text-align: center; font-size: 15px; font-family: sans-serif, arial, tahoma; font-weight: bold; color: #fff; border-radius: 5px;}
+.relacionado-newscoo {float: left; margin: 0 3px 0 12px; background-color: #be0000; border-radius: 4px; border: 0;}
+.relacionado-newscoo img {width: 150px; height: 120px; border: 0;}
+.relacionado-newscoo li {width: 150px; height: 20px; padding: 2px 4px; color: #fff; font-size: 13px; font-family: sans-serif, arial, tahoma; text-align: center;  list-style: none; border-radius: 4px; border: 0; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.relacionado-newscoo li:hover {background-color: #a30000;}
+.relacionado-newscoo li a {color: #fff; text-decoration: none;}
+
+/* --- Pagina dos Membros da Equipe / Autor1.php --- *//*-------------------------------------------------*/
+#title-category-autor {width: 700px; height: 35px; background-image: url(images/bg_grande_titulo.jpg); float: left; background-color: #888; text-align: center; margin: 6px 0 10px 0; padding: 1px 0 3px 0;}
+#title-category-autor span {text-transform: capitalize; font-size: 22px; font-family: calibria; font-weight: bold;}
+#title-category-autor span a {color: #fff; text-decoration: none;}
+
+.main-autor-lista {}
+.autor {width: 100%; clear: both; margin: 10px 0; padding: 0 0 10px 20px; border-bottom: 1px dashed #e5e5e5;}
+.photo {width: 100px; height: 100px;}
+.name-designer {position: relative; border-bottom: 2px solid #e49600; padding-bottom: 1px; top: -35px; font-size: 16px; font-weight: bold; font-family: sans-serif; color: #222; margin: 0 0 0 10px; clear: both;}
+.name-designer:hover {color: #0171b9; text-decoration: none; }
+
+/* -- Error de Pagina não Encontrada -- / 404.PHP e o ERROR.PHP */
+#topcover {width: 700px; height: 35px; margin-top: 5px; background-color: #333; float: left;}
+#topcover p {font-size: 15px; color: #fff; font-family: sans-serif, arial; font-weight: bold; margin-top: 7px; }
+#perdido {width: 100%; margin-top: 10px; float: left; text-align: center;}
+#perdido p {font-size: 15px; color: #222; font-weight: bold; font-family: sans-serif, arial;}
+.entry {width: 100%; float: left;}
+.entry p {margin: 5px 0; text-align: center;}
+#search-error {margin: 5px; float: left;}
+#search-error input {width: 220px; height: 26px; float: left; padding: 0 5px; background-color: #f5f5f5; border-radius: 3px; border: 0;}
+#search-error .btn-search {width: 26px; height: 26px; margin-left: -27px; float: left; background-color: #f5f5f5; background-image: url(images/pesquisa.png); border-radius: 2px; cursor: pointer;}
+
+/* Search das Categorias */
+#search_cat {width: 265px; float: left; margin-bottom: 3px; background-color: #444; border-radius: 0 5px 5px 0;}
+#search_cat #search-error {margin: 5px; float: left;}
+#search_cat #search-error input {width: 255px; height: 26px; border: 1px solid #ccc; float: left; padding: 0 5px; background-color: #f5f5f5; border-radius: 2px; border: 0;}
+#search_cat #search-error .btn-search {width: 26px; height: 26px; margin-left: -27px; float: left; background-color: #f5f5f5; background-image: url(images/pesquisa.png); border-radius: 2px; cursor: pointer;}
+
+/* Scroll da pagina do site */ 
+::-webkit-scrollbar {width: 6px;}
+::-webkit-scrollbar-track-piece {background-color: #eee; border: 1px solid #dfdfdf;}
+::-webkit-scrollbar-thumb {background-color: #ffae00; border-radius: 5px;}
+
+/* Comentários do Site Disqus e Facebook // Coment.php */
+.fb-comments {float: left; margin: 5px 0;}
+#coment_disqus {width: 690px; margin: 0 0 5px 5px; float: left;}
+
+/*=== FOOTER ===*//* --------------------------------------------------------------------------------------------------------------------------------------- */
+#footer {width: 1042px; height: 0 auto; background-color: #333; background-image: url(images/bg_footer.jpg); overflow: hidden; margin: 0 auto; margin-top: -15px; text-align: left;}
+
+/* --- Footer Content --- */
+#footer-content {width: 1040px; overflow: hidden; margin: 0 auto; }
+
+#topo-footer {width: 1040px; height: 36px; border-bottom: 1px dashed #999;}
+#botoes-sociais {float: left; margin: 8px 10px 0 5px;}
+
+/* Titulo das caixas Paginas, Facebook e Membros do Footer */
+.title-todo-footer {margin-left: 5px; padding: 4px 0;}
+.title-todo-footer span {font-size: 22px; font-family: calibria; color: #fff; text-transform: uppercase; font-weight: bold; border-radius: 2px 2px 0 0; padding: 4px 0; border-bottom: 2px solid #fff;}
+
+/* -- Footer Parceiros -- */
+#footer-parceiros {width: 306px; height: 255px; margin: 5px 0 5px 5px; background-color: rgba(0,0,0,.5); float: left; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);}
+#footer-parceiros #parceiros {width: 300px; height: 211px; margin: 5px 5px 5px 5px; float: left;}
+#footer-parceiros #parceiros ul {list-style: none;}
+#footer-parceiros #parceiros ul li {width: 300px; float: left; margin-left: -40px;}
+#footer-parceiros #parceiros ul img {width: 96px; height: 38px; margin: 0 4px 4px 0; border-radius: 2px; border: none!important; float: left;}
+#footer-parceiros #parceiros ul a:hover {}
+
+/* === Footer Facebook === */
+#footer-facebook {background-color: rgba(0,0,0,.5); width: 344px; height: 255px; margin: 5px 0 0 5px; float: left; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);}
+#footer-facebook .fb-page {margin: 5px 0 0 5px;}
+
+/* === Footer Membros === */
+#footer-membros {width: 370px; height: 255px; margin: 5px; background-color: rgba(0,0,0,.5); float: right; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);}
+#footer-membros .membros {width: 0 auto; height: 205px; overflow: ; margin: 5px 0 4px 5px; float: left;}
+#footer-membros .membros ul {margin: 0; padding: 0; list-style: none;}
+#footer-membros .membros ul li {float: left; width: 0 auto;}
+#footer-membros .membros ul li img{width: 48px; height: 48px; margin: 0 4px 4px 0; border-radius: 2px; border: 2px solid #fff; float: left;}
+#footer-membros .membros ul li img:hover {border: 2px solid #777; border-radius: 3px;}
+
+/* -- Footer Info -- */
+#footer-info {width: 1040px; float: left; clear: both; padding: 10px 0; border-top: 1px dashed #999; overflow: hidden;}
+
+/* - Footer Content - */
+#info-content {width: 1040px; font-size: 14px; font-family:  arial, helvetica, tahoma, verdana; color: #fff; text-align: center;}
+#info-content span .info-right {float: right; text-align: center;}
+#info-content span .info-right b {font-weight: bold; font-size: 15px;}
