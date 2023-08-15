@@ -1,2 +1,3 @@
 # PHP_Wordpress
-Site feito em php pra wordpress
+
+Feito em php para wordpress com todas as funcionalidades funcionado
